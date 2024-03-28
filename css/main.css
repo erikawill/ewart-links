@@ -1,1 +1,48 @@
 /* Place CSS styles here */
+body {
+    background: linear-gradient( rgb(236, 200, 253),  rgb(236, 200, 253) ), url(../img/full\ logo\ w\ bg.jpg);
+    background-color: rgb(236, 200, 253);
+    background-size: cover;
+}
+
+.pro-pic {
+    margin: 1%;
+    aspect-ratio: 1;
+    object-fit: cover;
+    mask-border: radial-gradient(#000 69%,#0000 70%) 84.5%/50%;
+    clip-path: polygon(-41% 0,50% 91%, 141% 0);
+    mask:
+    radial-gradient(at 70% 31%,#000 29%,#0000 30%),
+    radial-gradient(at 30% 31%,#000 29%,#0000 30%),
+    linear-gradient(#000 0 0) bottom/100% 50% no-repeat;
+   clip-path: polygon(-41% 0,50% 91%, 141% 0);
+   filter: drop-shadow(0 0 10px #ff3e60)
+}
+
+.link-wrapper {
+    -webkit-text-size-adjust: 100%;
+    padding-top: 5%;
+}
+.linknav {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+.linkbtn {
+    border: 2px solid;
+    border-radius: 5px;
+    color: white;
+    padding: 16px 32px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 50px;
+    font-family: 'Oswald', sans-serif;
+    margin: 6px 20px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    letter-spacing: 1px;
+    text-shadow: 2px 4px 4px rgba(46,91,173,0.6);
+}
+.linkbtn:hover {
+    background-color: rgb(241, 0, 177);
+}

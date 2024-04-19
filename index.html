@@ -28,14 +28,19 @@
   <body style="background-color: rgb(239, 208, 255);"></body>
 -->
 
+<!--FLOATING HEADER
+<div class="header-wrapper">
+  <div class="header" id="myHeader">
+    <div class="head">
+      <img class="head-image" src="./img/full logo w bg.jpg">
+      <p class="head-name">ERIKA</p>
+    </div>
+  </div>
+</div>
+-->
   <!--IMAGE-->
     <img class="pro-pic" src="./img/IMG_3727.jpg" width="250px">
 
-<!--FLOATING HEADER
-    <div class="header" id="myHeader">
-      <h2>My Header</h2>
-    </div>
--->
   <!--HEADING-->
 <div class="profile-title">
   <h1 class="profile-name"> ERIKA </h1>
@@ -65,11 +70,34 @@
         <p class="kofi-name">KO-FI</p>
       </div>
     </a>
-    <a class="linkbtn" href="" target="_blank"></a>
+    <a class="linkbtn" href="https://vimeo.com/ewart" target="_blank">
+      <div class="vimeo-btn">
+        <img class="vimeo-image" src="./img/vimeo.png">
+        <p class="vimeo-name">VIMEO</p>
+      </div>
+    </a>
+    <a class="linkbtn" href="" target="_blank">
+      <div class=""
+    </a>
   </nav>
 </div>
 
   <script src="js/main.js"></script>
+
+<script>
+  window.onscroll = function() {myFunction()};
+  
+  var header = document.getElementById("myHeader");
+  var sticky = header.offsetTop;
+  
+  function myFunction() {
+    if (window.pageYOffset > sticky) {
+      header.classList.add("sticky");
+    } else {
+      header.classList.remove("sticky");
+    }
+  }
+  </script>
 </body>
 
 </html>

@@ -5,6 +5,76 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
 }
+.topbar-wrapper {
+    padding: 10%;
+}
+.topbar {
+    padding: 10px 16px;
+    color: #f1f1f1;
+    font-size: 20px;
+    font-family: "Titillium Web", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    backdrop-filter: blur(10px);
+    z-index: 0;
+    overflow: hidden;
+    transition: box-shadow 0.25s cubic-bezier(0.08, 0.59, 0.29, 0.99) 0s, color 0.25s cubic-bezier(0.08, 0.59, 0.29, 0.99) 0s, border-color 0.25s cubic-bezier(0.08, 0.59, 0.29, 0.99) 0s, transform 0.25s cubic-bezier(0.08, 0.59, 0.29, 0.99) 0s, background-color 0.25s cubic-bezier(0.08, 0.59, 0.29, 0.99) 0s;
+    color: rgb(14, 0, 0);
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 50px;
+}
+.tb-title,
+.tb-image {
+    display: flex;
+    flex-direction: row;
+}
+.tb-name {
+    margin-left: 100%;
+}
+.tb-pic {
+    border-radius: 50%;
+    width: 10%;
+}
+.header-wrapper {
+    padding: 10%;
+}
+.header {
+    padding: 10px 16px;
+    color: #f1f1f1;
+    font-size: 20px;
+    font-family: "Titillium Web", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    backdrop-filter: blur(10px);
+    z-index: 0;
+    overflow: hidden;
+    transition: box-shadow 0.25s cubic-bezier(0.08, 0.59, 0.29, 0.99) 0s, color 0.25s cubic-bezier(0.08, 0.59, 0.29, 0.99) 0s, border-color 0.25s cubic-bezier(0.08, 0.59, 0.29, 0.99) 0s, transform 0.25s cubic-bezier(0.08, 0.59, 0.29, 0.99) 0s, background-color 0.25s cubic-bezier(0.08, 0.59, 0.29, 0.99) 0s;
+    color: rgb(14, 0, 0);
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 50px;
+  }
+  .head {
+    display: flex;
+    flex-direction: row;
+  }
+  .head-name {
+    margin-left: 35%;
+  }
+  .head-image {
+    border-radius: 50%;
+    width: 10%;
+  }
+  .head-name {}
+  
+  .sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+  
+  .sticky + .content {
+    padding-top: 102px;
+  }
 
 .pro-pic {
     border-radius: 50%;
@@ -39,7 +109,7 @@ body {
     letter-spacing: 1px;
     text-shadow: 2px 4px 4px rgba(46,91,173,0.6);
     margin: 0px;
-    font-size: 20px;
+    font-size: 40px;
     line-height: 1.5;
     text-overflow: ellipsis;
     max-width: 100%;
@@ -66,8 +136,8 @@ body {
 * {
     box-sizing: inherit;
 }
-.link-container {}
-.stylizedContainer {
+link-container {}
+stylizedContainer {
     backdrop-filter: blur(10px);
     z-index: 0;
     overflow: hidden;
@@ -79,7 +149,7 @@ body {
     border-radius: 24px;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 4px 8px 0px;
 }
-.webBtn {
+webBtn {
     margin: 0px;
     padding: 0px;
     border: 0px;
@@ -89,7 +159,7 @@ body {
     top: -92px;
     visibility: hidden;
 }
-.linkThumbnail {
+linkThumbnail {
     overflow: hidden;
     position: absolute;
     top: 50%;
@@ -103,13 +173,13 @@ body {
     width: 40px;
     height: 40px;
 }
-.link-thumbnail-image {
+link-thumbnail-image {
     margin: 0px;
     padding: 0px;
     border: 0px;
     font: inherit;
 }
-.linkTitle {
+linkTitle {
     position: relative;
     hyphens: none;
     padding: 0px;
@@ -138,7 +208,8 @@ linknav {
 }
 .web-btn,
 .insta-btn,
-.kofi-btn {
+.kofi-btn,
+.vimeo-btn {
     text-decoration: none;
     display: inline-block;
     font-size: 20px;
@@ -162,11 +233,12 @@ linknav {
     line-height: 1.5;
 }
 .linkbtn:hover {
-    box-shadow: 0 0 11px rgba(33,33,33,.2); 
+    box-shadow: 0px 4px 8px 0px rgba(0,0,0,0.34),0px 4px 8px 0px rgba(0,0,0,0.29);
 }
 .web-btn,
 .insta-btn,
-.kofi-btn {
+.kofi-btn,
+.vimeo-btn {
     display: flex;
     flex-direction: row;
 }
@@ -175,18 +247,23 @@ linknav {
     width: 10%;
 }
 .insta-image,
-.kofi-image {
+.kofi-image,
+.vimeo-image {
     width: 7%;
 }
 .web-name {
     text-align: center;
-    margin-left: 40%;
+    margin-left: 37%;
 }
 .insta-name {
     text-align: center;
-    margin-left: 42%;
+    margin-left: 38%;
 }
 .kofi-name {
     text-align: center;
-    margin-left: 44%;
+    margin-left: 41%;
+}
+.vimeo-name {
+    text-align: center;
+    margin-left: 40%;
 }

@@ -1,11 +1,23 @@
 /* Place CSS styles here */
 body {
-    background: linear-gradient( rgb(236, 200, 253),  rgb(236, 200, 253) ), url(../img/full\ logo\ w\ bg.jpg);
+    background: url(../img/full\ logo\ w\ bg.jpg);
     background-color: rgb(236, 200, 253);
     background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .pro-pic {
+    border-radius: 50%;
+    width: 96px;
+    height: 96px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    object-fit: contain;
+    object-position: initial;
+    filter: none;
+    padding: 2%;
+    /*
     margin: 1%;
     aspect-ratio: 1;
     object-fit: cover;
@@ -17,32 +29,164 @@ body {
     linear-gradient(#000 0 0) bottom/100% 50% no-repeat;
    clip-path: polygon(-41% 0,50% 91%, 141% 0);
    filter: drop-shadow(0 0 10px #ff3e60)
+   */
 }
+.profile-name {
+    font-family: "Titillium Web", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    color: white;  
+    letter-spacing: 1px;
+    text-shadow: 2px 4px 4px rgba(46,91,173,0.6);
+    margin: 0px;
+    font-size: 20px;
+    line-height: 1.5;
+    text-overflow: ellipsis;
+    max-width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-align: center;
+  }
+.profile-descrip {
+    font-family: "Titillium Web", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    color: white;  
+    letter-spacing: 1px;
+    text-shadow: 2px 4px 4px rgba(46,91,173,0.6);
+    margin: 0px;
+    font-size: 20px;
+    line-height: 1.5;
+    text-overflow: ellipsis;
+    max-width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-align: center;
+}
+* {
+    box-sizing: inherit;
+}
+.link-container {}
+.stylizedContainer {
+    backdrop-filter: blur(10px);
+    z-index: 0;
+    overflow: hidden;
+    transition: box-shadow 0.25s cubic-bezier(0.08, 0.59, 0.29, 0.99) 0s, color 0.25s cubic-bezier(0.08, 0.59, 0.29, 0.99) 0s, border-color 0.25s cubic-bezier(0.08, 0.59, 0.29, 0.99) 0s, transform 0.25s cubic-bezier(0.08, 0.59, 0.29, 0.99) 0s, background-color 0.25s cubic-bezier(0.08, 0.59, 0.29, 0.99) 0s;
+    color: rgb(14, 0, 0);
+    background-color: rgba(255, 255, 255, 0.5);
+    border-width: 0px;
+    margin-bottom: 16px;
+    border-radius: 24px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 4px 8px 0px;
+}
+.webBtn {
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    font: inherit;
+    display: block;
+    position: relative;
+    top: -92px;
+    visibility: hidden;
+}
+.linkThumbnail {
+    overflow: hidden;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+}
+.link-thumbnail-image {
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    font: inherit;
+}
+.linkTitle {
+    position: relative;
+    hyphens: none;
+    padding: 0px;
+    margin: 0px;
+    width: 100%;
+    font-weight: 500;
+    line-height: 1.5;
+    font-size: 16px;
+    font-family: "Titillium Web", sans-serif;
+}
+
+
 
 .link-wrapper {
     -webkit-text-size-adjust: 100%;
     padding-top: 5%;
+    padding: 10%;
 }
-.linknav {
+linknav {
     text-align: center;
     display: flex;
     flex-direction: column;
 }
 .linkbtn {
-    border: 2px solid;
-    border-radius: 5px;
-    color: white;
-    padding: 16px 32px;
+    text-decoration: none;
+}
+.web-btn,
+.insta-btn,
+.kofi-btn {
     text-decoration: none;
     display: inline-block;
-    font-size: 50px;
-    font-family: 'Oswald', sans-serif;
+    font-size: 20px;
+    font-family: "Titillium Web", sans-serif;
     margin: 6px 20px;
     transition-duration: 0.4s;
     cursor: pointer;
     letter-spacing: 1px;
     text-shadow: 2px 4px 4px rgba(46,91,173,0.6);
+    backdrop-filter: blur(10px);
+    z-index: 0;
+    overflow: hidden;
+    transition: box-shadow 0.25s cubic-bezier(0.08, 0.59, 0.29, 0.99) 0s, color 0.25s cubic-bezier(0.08, 0.59, 0.29, 0.99) 0s, border-color 0.25s cubic-bezier(0.08, 0.59, 0.29, 0.99) 0s, transform 0.25s cubic-bezier(0.08, 0.59, 0.29, 0.99) 0s, background-color 0.25s cubic-bezier(0.08, 0.59, 0.29, 0.99) 0s;
+    color: rgb(14, 0, 0);
+    background-color: rgba(255, 255, 255, 0.5);
+    border-width: 0px;
+    margin-bottom: 16px;
+    border-radius: 50px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 4px 8px 0px;
+    padding: 16px 32px;
+    line-height: 1.5;
 }
 .linkbtn:hover {
-    background-color: rgb(241, 0, 177);
+    box-shadow: 0 0 11px rgba(33,33,33,.2); 
+}
+.web-btn,
+.insta-btn,
+.kofi-btn {
+    display: flex;
+    flex-direction: row;
+}
+.web-image {
+    border-radius: 50%;
+    width: 10%;
+}
+.insta-image,
+.kofi-image {
+    width: 7%;
+}
+.web-name {
+    text-align: center;
+    margin-left: 40%;
+}
+.insta-name {
+    text-align: center;
+    margin-left: 42%;
+}
+.kofi-name {
+    text-align: center;
+    margin-left: 44%;
 }

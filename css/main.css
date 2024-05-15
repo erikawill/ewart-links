@@ -186,8 +186,8 @@ linknav {
     flex-direction: row;
 }
 .web-image {
-    border-radius: 50%;
-    width: 10%;
+    clip-path: circle(50%);
+    width: 7%;
 }
 .insta-image,
 .kofi-image,
@@ -196,7 +196,7 @@ linknav {
 }
 .web-name {
     text-align: center;
-    margin-left: 37%;
+    margin-left: 39%;
 }
 .insta-name {
     text-align: center;
